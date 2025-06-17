@@ -1,0 +1,17 @@
+
+class Main {
+    static int sumNaturalNumbers(int n) {
+        if (n <= 0) {
+            return 0;
+        }
+        return n + sumNaturalNumbers(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int number = 10;
+        int result = sumNaturalNumbers(number);
+        System.out.println("Sum of natural numbers up to " + number + " is " + result);
+    }
+}
+
+    
